@@ -1,0 +1,18 @@
+Question 6
+Write a Python function intersect(l1,l2) that takes two sorted lists as arguments and returns the list of all elements common to both l1 and l2 in the same order that they appear in the two lists. If the same element occurs more than once in both lists, it should appear in the output exactly once.
+
+Thus, intersect([2,2,4],[1,2,2,3,4]) should return [2, 4] while intersect([1,2,3],[4,5,6]) should return [].
+
+Solution:
+
+def intersect(l1, l2):
+  l3=[]
+  for i in l2:
+    if i in l1:
+      l3.append(i)
+  for i in l1:
+    if i in l2 and i in l3:
+      l3.append(i)
+  l3 = list(set(l3))
+  l3.sort()
+  return l3

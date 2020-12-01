@@ -1,0 +1,12 @@
+Question2
+Here is a function stablesortbad that takes a list of pairs of integers as input and sorts them by the first coordinate in each pair. A stable sort preserves the order of pairs that have an equal first coordinate. This is not a stable sort. Provide an input for which stablesortbad produces an output that is not stably sorted. Your input should be a list of pairs of integers of the form [(i1,j1),(i2,j2),…,(in,jn)].
+
+def stablesortbad(l):
+ for j in range(len(l)-1):
+ for i in range(len(l)-1):
+ if l[i][0] >= l[i+1][0]:
+ (l[i],l[i+1]) = (l[i+1],l[i])
+ return(l)
+
+Solution:
+[(2,3),(2,1),(1,5),(1,2)]

@@ -1,0 +1,12 @@
+Question 1
+Here is an function to return the maximum value in a list of integers. There is an error in this function. Provide an input list for which maxbad produces an incorrect output.
+
+def maxbad(l):
+  mymax = 0
+  for i in range(len(l)):
+    if l[i] > mymax:
+       mymax = l[i]
+  return(mymax)
+Open up the code submission box below and write your test case where you would normally paste your code.
+
+Solution: [-3,-2,-1]
