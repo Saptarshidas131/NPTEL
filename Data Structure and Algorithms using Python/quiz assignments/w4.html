@@ -1,0 +1,7685 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=96&assessment=97 -->
+<html lang="en_US" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script async="" src="./w4_files/analytics.js"></script><script src="./w4_files/cb=gapi.loaded_0" async=""></script><script type="text/jscript" src="./w4_files/mobile_redirect.js" charset="utf-8"></script>
+    <!--<base href="https://onlinecourses.nptel.ac.in/noc20_cs26/">--><base href=".">
+    
+    <link rel="icon" href="https://storage.googleapis.com/swayam2-node/assets/img/favicon.ico">
+    
+    
+  <title>
+    Programming, Data Structures And Algorithms Using Python -
+    
+  - Unit 10 - Week 4 Quiz
+
+  </title>
+
+    <!-- jQuery should be imported first -->
+    <script src="./w4_files/jquery.min.js"></script>
+    <script src="./w4_files/registry.js"></script>
+
+
+    <!-- The following translated strings are used in activity-generic.js and should be
+    declared before that file is imported. -->
+    <script>
+      // inline translations
+      var trans = {};
+
+      
+      trans.CHECK_ANSWER_TEXT =
+          " Check Answer ";
+
+      
+      trans.CHECK_ANSWERS_TEXT =
+          " Check Answers ";
+
+      
+      trans.SHOW_ANSWER_TEXT =
+          " Skip and Show Answer ";
+
+      
+      trans.SAVE_ANSWERS_TEXT =
+          " Save Answers ";
+
+      
+      trans.SAVE_DRAFT_TEXT =
+          " Save Draft ";
+
+      
+      trans.SUBMIT_ANSWERS_TEXT =
+          " Submit Answers ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_TEXT =
+          " Submit Assignment ";
+
+      
+      trans.SUBMIT_REVIEW_TEXT =
+          " Submit Review ";
+
+      
+      trans.SELECT_ANSWER_PROMPT =
+          " Please click one of the buttons for your answer. ";
+
+      
+      trans.ALL_CORRECT_TEXT =
+          " All your answers are correct! ";
+
+      
+      trans.NUM_CORRECT_TEXT =
+          " Number of questions you answered correctly ";
+
+      
+      trans.YOUR_SCORE_TEXT =
+          " You received a score on this assessment of ";
+
+      
+      trans.LESSONS_TO_REVIEW_TEXT =
+          " Here are lessons you could review to improve your score ";
+
+      
+      trans.PERFECT_SCORE_SAVE_TEXT =
+          " Congratulations! Press the \'Submit Answers\' button to submit your grade. ";
+
+      
+      trans.GENERIC_SAVE_TEXT =
+          " Press the \'Submit Answers\' button below to save your scores. You can also edit your answers above before clicking \'Submit Answers\'. ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_CONFIRMATION =
+          " Are you sure you want to submit this assignment? ";
+
+      
+      trans.SUBMIT_REVIEW_CONFIRMATION =
+          " Are you sure you want to submit this review? ";
+
+      
+      trans.CONFIRMATION_EXPLANATION =
+          " You cannot edit or delete it after you have done so. ";
+    </script>
+
+    
+    
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" href="https://storage.googleapis.com/swayam2-node/assets/img/favicon.ico">
+  <link href="./w4_files/main.css" rel="stylesheet" type="text/css">
+  <link href="./w4_files/nptel(1).css" rel="stylesheet" type="text/css">
+  <link href="./w4_files/chosen.min.css" rel="stylesheet" type="text/css">
+  <link href="./w4_files/minimal.mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)">
+
+  <!-- jQuery should be imported first -->
+  <script src="./w4_files/jquery.min(1).js"></script>
+  <script src="./w4_files/chosen.jquery.min.js"></script>
+  <script src="./w4_files/butterbar.js"></script>
+  <link rel="stylesheet" type="text/css" href="./w4_files/butterbar.css" media="screen">
+  <script src="./w4_files/main.js"></script>
+
+  <!--<script src="//www.google.com/jsapi" type="text/javascript"></script>-->
+  <script src="./w4_files/loader.js"></script>
+
+  <script type="text/javascript">
+    function addScript(src, callback) {
+      var r = false;
+      var existed = true;
+      var element = document.getElementById(src);
+      if (!element) {
+        existed = false;
+        element = document.createElement('script');
+        element.src = src;
+        element.type = 'text/javascript';
+        element.setAttribute('id', src);
+      }
+      if (callback != null) {
+        element.onload = element.onreadystatechagne = function() {
+          if (!r && (!this.readyState || this.readyState == 'complete')) {
+            r = true;
+            callback();
+          }
+        }
+      }
+      if (!existed) document.body.appendChild(element);
+    }
+    function getStudentProgress() {
+      
+      ajax_server.get_progress();
+      
+    }
+    function prettyfyCode() {
+      prettyPrint();
+    }
+    function showButterBar() {
+      
+      var regConfirmationMsg = "Thank you for registering for the course. Click the Announcements tab for important information.";
+      if(window.location.hash == '#registration_confirmation') {
+        cbShowMsg(regConfirmationMsg);
+        setTimeout(function() {cbHideMsg();}, 20000);
+      }
+      
+      var regClosedMsg = "Registrations for this course are not open.";
+      if(window.location.hash == '#registration_closed') {
+        cbShowMsg(regClosedMsg);
+        setTimeout(function() {cbHideMsg();}, 20000);
+      }
+    }
+    function loadOtherJs(callback) {
+      var c = getStudentProgress;
+      if (null != callback) {
+        c = function() {
+           callback();
+           getStudentProgress();
+        }
+      }
+      addScript('https://storage.googleapis.com/swayam2-node/assets/lib/google-code-prettify/prettify.js', prettyfyCode);
+      addScript('https://storage.googleapis.com/swayam2-node/modules/nptel/assets/js/activity-generic-1.3.js', null);
+      addScript('https://storage.googleapis.com/swayam2-node/modules/nptel/assets/js/main.js', c);
+    }
+    function downloadJsAtLoad() { loadOtherJs(null); }
+
+    google.charts.load('current', {packages: ['corechart']});
+    google.charts.setOnLoadCallback(downloadJsAtLoad);
+  </script><script type="text/javascript" charset="UTF-8" src="./w4_files/loader(1).js"></script>
+ 
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Course",
+      "@id": "https://onlinecourses.nptel.ac.in/noc20_cs26/",
+      "name": "Programming, Data Structures And Algorithms Using Python",
+      "description": "",
+      "provider": {
+        "@type":"Organization",
+        "name":"National Programme on Technology Enhanced Learning",
+        "sameAs":"http://nptel.iitm.ac.in"
+      },
+      "grantsCredential": "False",
+      "isAccessibleForFree" : "",
+
+      "hasCourseInstance" : [
+      {
+        "inLanguage" : "en",
+        "audioLanguage" : ["en"],
+        "startDate" : "2020-01-27T00:00:00.000000Z"
+        }
+      ],
+      
+        "image" : "/modules/nptel/assets/img/nptel-logo.png"
+      
+    }
+  </script>
+
+    <script src="./w4_files/in_place_lesson_editor.js"></script>
+    <link rel="stylesheet" href="./w4_files/in_place_lesson_editor.css">
+    <link rel="stylesheet" href="./w4_files/material-design-iconic-font.min.css">
+  
+
+    
+
+    
+
+    <script>
+      var eventXsrfToken = '1608188481/41rK0L0mLgkgyIwu9Fg-OQ==';
+      
+        var gcbCanRecordStudentEvents = true;
+      
+
+      
+        var transientStudent = false;
+      
+    </script>
+
+    
+      <script type="text/javascript" src="./w4_files/plusone.js" gapi_processed="true"></script>
+    
+
+    <script>
+      function gcb_edit_hook_point(key) {
+        window.location=('dashboard?action=edit_html_hook&key=' +
+            encodeURIComponent(key));
+      }
+      $(function() {
+        // TODO(nretallack): This duplicates code in
+        // modules/dashboard/resources/js/view.js.
+        function parseJson(s) {
+          var xssiPrefix = ")]}'";
+          return JSON.parse(s.replace(xssiPrefix, ''));
+        }
+
+        $("#locale-select").change(function() {
+          var localeSelect = $("#locale-select");
+          var request = JSON.stringify({
+            xsrf_token: localeSelect.data("xsrf-token"),
+            payload: {
+              selected: localeSelect.val()
+            }
+          });
+          $.ajax({
+            url: "rest/locale",
+            type: "POST",
+            data: {request: request},
+            dataType: "text",
+            success: function(data) {
+              data = parseJson(data);
+              if (data.status == 200) {
+                window.location.reload();
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+    
+      
+      
+    
+
+    <link id="load-css-0" rel="stylesheet" type="text/css" href="./w4_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./w4_files/util.css"><script type="text/javascript" charset="UTF-8" src="./w4_files/jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="./w4_files/jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="./w4_files/jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="./w4_files/jsapi_compiled_corechart_module.js"></script></head><body data-gcb-page-locale="en_US" style=""><div class="gcb-html-hook" id="base-before-head-tag-ends"><!-- base.before_head_tag_ends --></div>
+  
+
+  
+    <div class="invisiblePopupDiv" id="termsDiv">
+       <div class="gcb-pull-right">
+       <a class="closeXButton" onclick="hidePopupDiv(&quot;termsDiv&quot;); return false;">X</a>
+       </div>
+       <iframe src="./w4_files/terms.html" class="popupIframe"></iframe>
+      </div>
+    <div class="invisiblePopupDiv" id="honorDiv">
+       <div class="gcb-pull-right">
+       <a class="closeXButton" onclick="hidePopupDiv(&quot;honorDiv&quot;); return false;">X</a>
+       </div>
+       <iframe src="./w4_files/honor_code.html" class="popupIframe"></iframe>
+      </div>
+    <div class="invisiblePopupDiv" id="faqDiv">
+       <div class="gcb-pull-right">
+       <a class="closeXButton" onclick="hidePopupDiv(&quot;faqDiv&quot;); return false;">X</a>
+       </div>
+       <iframe src="./w4_files/faq.html" class="popupIframe"></iframe>
+    </div>
+
+    <div class="gcb-html-hook" id="base-after-body-tag-begins"><!-- base.after_body_tag_begins --></div>
+
+    
+      <script>
+        // Course-Builder specific setup for Google Tag Manager.  Iff
+        // Tag Managers is enabled, the values in the dataLayer list of
+        // dicts is made available to Tag Manager macros.
+        dataLayer = [{
+          'course_title': 'Programming, Data Structures And Algorithms Using Python',
+          'event': 'default',  // Explicit value meaning not-really-set.
+          }];
+
+        function gcbSetPageInfo(dict) {
+          dataLayer.push(dict);
+        }
+
+        // Invoke page-specific block so that any calls to gcbReportPageInfo()
+        // are made before we hit the Tag Manager call, below.
+        
+  if ('gcbSetPageInfo' in window) {
+    gcbSetPageInfo({
+      'page_type': 'assessment',
+      'unit_id': '96',
+      
+      
+        'assessment_id': '97',
+      
+    });
+  }
+
+      </script>
+
+      
+    
+
+    <!-- ButterBar -->
+    <div class="gcb-butterbar-container">
+      <div id="gcb-butterbar-top" class="gcb-butterbar" style="margin-top:50px" aria-live="polite">
+        <p id="gcb-butterbar-message"></p>
+        <a id="gcb-butterbar-close">X</a>
+      </div>
+    </div>
+
+    
+        <!-- header starts -->
+        <!-- Swayam CSS -->
+<link href="./w4_files/bootstrap.min.css" rel="stylesheet">
+<!--<link href="https://storage.googleapis.com/swayam2-node/assets/css/swayam_css/main.css" rel="stylesheet">-->
+<link rel="icon" href="https://storage.googleapis.com/swayam2-node/assets/img/favicon.ico">
+<link rel="stylesheet" href="./w4_files/font-awesome.min.css">
+<!-- Swayam JS -->
+<script src="./w4_files/jquery.js"></script>
+<script src="./w4_files/bootstrap.min.js"></script>
+
+<style>
+    /* Overriding from nptel.css */
+    #gcb-nav-x {
+        background-color: #993333;
+    }
+
+    #gcb-nav-x > .gcb-aux > a,
+    #gcb-nav-x > .gcb-aux > a:visited,
+    #gcb-nav-x > .gcb-aux {
+        color: #ffffff;
+    }
+
+    .dropdown>a:focus, .dropdown>a:hover, .dropdown>a:active {
+    text-decoration: none;
+    }
+
+    .top-bar {
+        padding: 5px 0;
+        color: #333333;
+        font-size: 10px;
+        font-weight: 500
+    }
+
+    .top-navigation {
+        text-align: right
+    }
+
+    @media (max-width: 767px) {
+        .top-navigation {
+            text-align: center
+        }
+    }
+
+    @media (max-width: 767px) {
+        .top-left {
+            text-align: center
+        }
+    }
+
+    .top-navigation {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+
+    .top-navigation a {
+        color: #666666;
+        padding: 0px 4px 0px 4px;
+        font-size: 14px;
+        font-weight: 300
+    }
+
+    .top-navigation a:hover {
+      color: #0099cc;
+      text-decoration: none;
+    }
+
+    .navbar {
+        margin: 0px;
+        background: #FFFFFF;
+        padding: 0px;
+        border: none
+    }
+
+    .navbar-brand{
+        padding: 0;
+        float: none;
+    }
+
+    .dropdown-menu>li>a {
+        padding: 5px 15px 5px 15px
+    }
+
+    .dropdown-menu>li:hover>a,
+    .dropdown-menu>li>a:focus,
+    .dropdown-menu>li>a:active {
+        color: #FFFFFF;
+        background:#0099cc;
+    }
+
+    .dropdown-menu li:first-child{
+        border-top: 4px solid #ff8811;
+        padding-top:10px;
+    }
+
+    .dropdown-menu li:last-child{
+        padding-bottom:10px;
+    }
+
+    .dropdown-menu li:hover .normalimg,
+    .dropdown-menu li a:hover .normalimg,
+    .dropdown-menu li a:focus .normalimg{
+        display:none;
+    }
+
+    .dropdown-menu li:hover .selectedimg,
+    .dropdown-menu li a:hover .selectedimg,
+    .dropdown-menu li a:focus .selectedimg{
+        display:inline-block;
+    }
+
+    .selectedimg{
+        display:none;
+    }
+
+    .dropdown-menu {
+        background: #ffffff;
+        padding: 0px;
+        margin-right: 5px;
+        margin-top: 20px;
+        text-align: left;
+        right: 0;
+        left: auto;
+    }
+</style>
+
+
+<header role="banner">
+    <!--Top Bar [START]-->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-xs-12 top-left">
+              <a class="navbar-brand" href="https://swayam.gov.in/">
+                  <img src="./w4_files/swayam_logo.png" alt="swayam-logo">
+              </a> &nbsp; &nbsp; &nbsp;
+
+              
+              <a href="https://swayam.gov.in/nc_details/NPTEL">
+                  <img src="./w4_files/NPTEL_logo_128.png" alt="nc-logo" width="48px" height="48px">
+              </a>
+              
+          </div>
+          <div class="col-sm-9 col-xs-12">
+            <div class="top-navigation">
+                <!--<a href="/about">About Swayam</a> |-->
+                <!--<a href="/explorer">All Courses</a> |-->
+                <!--<a href="/nc_details/">National Coordinators</a> |-->
+                <!--<a href="https://nptel.ac.in/LocalChapter/">Local Chapters</a>-->
+                <div class="dropdown">
+                     
+                        <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+
+                            
+                            <li>
+                                <a href="https://onlinecourses.nptel.ac.in/profile">
+                                    <img src="./w4_files/icon_my_profile_normal.png" class="normalimg">
+                                    <img src="./w4_files/icon_my_profile_selected.png" class="selectedimg">
+                                    MY PROFILE
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://swayam.gov.in/mycourses">
+                                    <img src="./w4_files/icon_my_courses_normal.png" class="normalimg">
+                                    <img src="./w4_files/icon_my_courses_selected.png" class="selectedimg">
+                                    MY COURSES
+                                </a>
+                            </li>
+                            
+
+                            
+                                <li class="divider"></li>
+                            
+
+                            <li>
+                                <a href="https://swayamopenid.b2clogin.com/swayamopenid.onmicrosoft.com/B2C_1_swayam2/oauth2/v2.0/logout?post_logout_redirect_uri=https://onlinecourses.nptel.ac.in/wso_logout">
+                                    <img src="./w4_files/icon_sign_out_normal.png" class="normalimg">
+                                    <img src="./w4_files/icon_sign_out_selected.png" class="selectedimg">
+                                    SIGN-OUT
+                                </a>
+                            </li>
+                        </ul>
+                      
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Top Bar [END]-->
+</header>
+
+        <!-- header ends -->
+    
+
+    
+  <!-- nav bar -->
+  <div class="gcb-nav gcb-complex" id="gcb-nav-x">
+    <div class="gcb-aux">
+      <a class="gcb-nav-course-title" href="https://swayam.gov.in/explorer?ncCode=NPTEL">NPTEL</a>
+      <span class="gcb-nav-course-title">»</span>
+      <a class="gcb-nav-course-title" href="https://onlinecourses.nptel.ac.in/noc20_cs26/course">Programming, Data Structures And Algorithms Using Python</a>
+      <div class="gcb-pull-right"><ul class="clearfix">
+
+        <!-- left-aligned links in order -->
+        <div class="gcb-html-hook" id="base-after-navbar-begins"><!-- base.after_navbar_begins --></div>
+        <li>
+          
+          <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/announcements">Announcements</a>
+        </li>
+        <li class="active">
+          
+          <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/preview">About the Course</a>
+        </li>
+        
+          <li>
+            
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/forum">Ask a Question</a>
+          </li>
+        
+        
+          <li>
+            
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/student/home">Progress</a>
+          </li>
+         
+        
+              <li>
+                
+                <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/student/mentor">Mentor</a>
+              </li>
+              
+        
+        
+        <!---->
+
+        <!-- right-aligned links are in order -->
+       <!-- -->
+        
+          
+            <!-- <li class="gcb-pull-right">
+              
+              <a href="/">My Courses</a>
+            </li> -->
+          
+        
+        <div class="gcb-html-hook" id="base-before-navbar-ends"><!-- base.before_navbar_ends --></div>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <!-- top section -->
+
+   <div id="gcb-main-body" class="clearfix">
+    <div class="is-wrapper">
+      <div class="gcb-aux">
+        
+
+        <div class="gcb-html-hook" id="base-after-top-content-ends"><!-- base.after_top_content_ends --></div>
+
+        <!-- main section -->
+        
+
+<script>
+  var questionData = {};
+  questionData.scored = true;
+</script>
+
+
+<div id="gcb-main">
+  <div id="gcb-left-nav-toggle">
+    <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/" class="gcb-button">
+      <span class="show">
+        
+        Show Syllabus
+      </span>
+      <span class="hide">
+        
+        Hide Syllabus
+      </span>
+    </a>
+  </div>
+  <script>
+    $('#gcb-left-nav-toggle a').click(function(){
+        if ($(this).hasClass('show')) {
+            $(this).removeClass('show');
+            $('#gcb-nav-y').hide();
+            $('.gcb-unit-header').show('fast');
+            $('#gcb-nav-y + .gcb-article').show('fast');
+        } else {
+            $(this).addClass('show');
+            $('#gcb-nav-y').show('fast');
+            $('.gcb-unit-header').hide();
+            $('#gcb-nav-y + .gcb-article').hide();
+        }
+        return false;
+    });
+    function getStudentView(){
+      var viewAsUser = $('#view_as_user').val();
+      var url = new URL("https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=96&assessment=97");
+      url.searchParams.set('view_as_user', viewAsUser);
+      window.location.href = url.toString();
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      if('' && 'True'){
+        $('#checkAnswerButton, #submitbutton').prop('disabled', true);
+      }
+    }, false);
+  </script>
+
+  <ul id="gcb-breadcrumb" class="gcb-breadcrumb">
+    
+    <li><a href="https://onlinecourses.nptel.ac.in/noc20_cs26/course">Course</a></li>
+    <li><a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=96">
+      Unit 10</a></li>
+    
+  </ul>
+
+  <div id="gcb-unit-header">
+    <h1 class="gcb-unit-header">
+      Unit 10 - Week 4 Quiz
+      
+    </h1>
+  </div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="gcb-nav" id="gcb-nav-left" role="navigation">
+
+  
+
+  <div class="gcb-aside">
+  <h2>Course outline</h2>
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_64">
+  <div class="unit_heading" id="unit_heading_64" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_64&quot;)">
+     How does an NPTEL online course work? </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_64">
+    
+            
+              
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=76">Welcome to NPTEL open online course</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-76">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=65">Information about the course and accessing the content</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-65">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=77">Announcement</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-77">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=66">Discussion Forum: Do you have a doubt or question</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-66">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=67">Know your scores in the Assignments</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-67">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=68">Certification criteria</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-68">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=69">Best practices to maximize the learning from the online course</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-69">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=70">Guidelines and Timelines</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-70">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=71">What you should know about the final certification exam</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-71">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=72">MCQ and MSQ Assignment</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-72">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=73">Numerical and Short Answer Assignment</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-73">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=74">Subjective Assignment ( Essay Type)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-74">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=78">Subjective Assignment (Scan and Upload)</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-78">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=64&amp;lesson=75">Programming Assignment</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-75">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+          
+          
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_1">
+  <div class="unit_heading" id="unit_heading_1" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_1&quot;)">
+     Week 1 : Introduction </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_1">
+    
+            
+              
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=1&amp;lesson=2">Lecture 1: Algorithms and programming: simple gcd</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-2">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=1&amp;lesson=3">Lecture 2: Improving naive gcd</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-3">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=1&amp;lesson=4">Lecture 3: Euclid's algorithm for gcd</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-4">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=1&amp;lesson=5">Lecture 4: Downloading and installing Python</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-5">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=1&amp;lesson=87">Week 1 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-87">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_85">
+  <div class="unit_heading" id="unit_heading_85" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_85&quot;)">
+     Week 1 Quiz </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_85">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/assessment?name=86">Quiz : Week 1 Quiz</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-86">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_7">
+  <div class="unit_heading" id="unit_heading_7" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_7&quot;)">
+     Week 2: Basics of Python </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_7">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=7&amp;lesson=8">Lecture 1: Assignment statement, basic types - int, float, bool</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-8">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=7&amp;lesson=9">Lecture 2: Strings</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-9">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=7&amp;lesson=10">Lecture 3: Lists</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-10">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=7&amp;lesson=11">Lecture 4: Control Flow</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-11">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=7&amp;lesson=12">Lecture 5: Functions</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-12">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=7&amp;lesson=13">Lecture 6: Examples</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-13">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=7&amp;lesson=90">Week 2 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-90">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_88">
+  <div class="unit_heading" id="unit_heading_88" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_88&quot;)">
+     Week 2 Quiz </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_88">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/assessment?name=89">Quiz : Week 2 Quiz</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-89">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_91">
+  <div class="unit_heading" id="unit_heading_91" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_91&quot;)">
+     Week 2 Programming Assignment </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_91">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=92">Week 2 Programming Assignment</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-92">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_14">
+  <div class="unit_heading" id="unit_heading_14" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_14&quot;)">
+     Week 3: Lists, inductive function definitions, sorting </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_14">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=15">Lecture 1: More about range()</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-15">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=16">Lecture 2: Manipulating lists</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-16">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=17">Lecture 3: Breaking out of a loop</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-17">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=18">Lecture 4: Arrays vs lists, binary search</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-18">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=19">Lecture 5: Efficiency</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-19">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=20">Lecture 6: Selection Sort</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-20">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=21">Lecture 7: Insertion Sort</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-21">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=22">Lecture 8: Recursion</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-22">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=14&amp;lesson=95">Week 3 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-95">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_93">
+  <div class="unit_heading" id="unit_heading_93" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_93&quot;)">
+     Week 3 Programming Assignment </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_93">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=94">Week 3 Programming Assignment</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-94">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_23">
+  <div class="unit_heading" id="unit_heading_23" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_23&quot;)">
+     Week 4: Sorting, Tuples, Dictionaries, Passing Functions, List Comprehension </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_23">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=24">Lecture 1: Mergesort</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-24">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=25">Lecture 2: Mergesort, analysis</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-25">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=26">Lecture 3: Quicksort</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-26">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=27">Lecture 4: Quicksort analysis</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-27">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=28">Lecture 5: Tuples and dictionaries</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-28">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=29">Lecture 6: Function definitions</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-29">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=30">Lecture 7: List Comprehension</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-30">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=23&amp;lesson=100">Week 4 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-100">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_96">
+  <div class="unit_heading" id="unit_heading_96" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_96&quot;)">
+     Week 4 Quiz </div>
+    
+      <ul class="subunit_navbar_current" id="subunit_navbar_96">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_current">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/assessment?name=97">Quiz : Week 4 Quiz</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-97">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_98">
+  <div class="unit_heading" id="unit_heading_98" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_98&quot;)">
+     Week 4 Programming Assignment </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_98">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=99">Week 4 Programming Assignment</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-99">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_31">
+  <div class="unit_heading" id="unit_heading_31" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_31&quot;)">
+     Week 5: Exception handling, input/output, file handling, string processing </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_31">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=31&amp;lesson=32">Lecture 1: Exception Handling</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-32">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=31&amp;lesson=33">Lecture 2: Standard input and output</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-33">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=31&amp;lesson=34">Lecture 3: Handling files</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-34">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=31&amp;lesson=35">Lecture 4: String functions</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-35">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=31&amp;lesson=36">Lecture 5: Formatting printed output</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-36">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=31&amp;lesson=37">Lecture 6: pass, del() and None</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-37">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=31&amp;lesson=103">Week 5 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-html-103">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_101">
+  <div class="unit_heading" id="unit_heading_101" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_101&quot;)">
+     Week 5 Programming Assignment </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_101">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=102">Week 5 Programming Assignment</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-102">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_38">
+  <div class="unit_heading" id="unit_heading_38" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_38&quot;)">
+     Week 6: Backtracking, scope, data structures; stacks, queues and heaps </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_38">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=39">Lecture 1: Backtracking, N queens</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-39">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=40">n queens: Python code</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-40">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=41">n queens, all solutions: Python code</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-41">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=42">Lecture 2: Global scope, nested functions</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-42">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=43">Lecture 3: Generating permutations</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-43">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=44">Lecture 4: Sets, stacks, queues</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-44">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=45">Lecture 5: Priority queues and heaps</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-45">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=38&amp;lesson=106">Week 6 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-106">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_104">
+  <div class="unit_heading" id="unit_heading_104" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_104&quot;)">
+     Week 6 Quiz </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_104">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/assessment?name=105">Quiz : Week 6 Quiz</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-105">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_46">
+  <div class="unit_heading" id="unit_heading_46" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_46&quot;)">
+     Week 7: Classes, objects and user defined datatypes </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_46">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=46&amp;lesson=47">Lecture 1: Abstract datatypes, classes and objects</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-47">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=46&amp;lesson=48">Lecture 2: Classes and objects in Python</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-48">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=46&amp;lesson=49">Lecture 3: User defined lists</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-49">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=46&amp;lesson=50">User defined lists: Python code</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-50">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=46&amp;lesson=51">Lecture 4: Search trees</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-51">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=46&amp;lesson=52">Search trees: Python code</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-52">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=46&amp;lesson=109">Week 7 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-109">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_107">
+  <div class="unit_heading" id="unit_heading_107" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_107&quot;)">
+     Week 7 Quiz </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_107">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/assessment?name=108">Quiz : Week 7 Quiz</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-108">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_53">
+  <div class="unit_heading" id="unit_heading_53" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_53&quot;)">
+     Week 8: Dynamic programming, wrap-up </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_53">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=53&amp;lesson=54">Lecture 1: Memoization and dynamic programming</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-54">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=53&amp;lesson=55">Lecture 2: Grid paths</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-55">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=53&amp;lesson=56">Lesson 3: Longest common subsequence</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-56">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=53&amp;lesson=57">Lecture 4: Matrix multiplication</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-57">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=53&amp;lesson=58">Lecture 5: Wrap-up, Python vs other languages</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-58">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=53&amp;lesson=113">Week 8 Feedback</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-113">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=53&amp;lesson=114">New Lesson</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-114">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_111">
+  <div class="unit_heading" id="unit_heading_111" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_111&quot;)">
+     Week 8 Programming Assignment </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_111">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=112">Week 8 Programming Assignment</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-112">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_59">
+  <div class="unit_heading" id="unit_heading_59" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_59&quot;)">
+     Text Transcripts </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_59">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=59&amp;lesson=60">Hindi Transcripts</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-60">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=59&amp;lesson=61">Bengali Transcripts</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-61">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=59&amp;lesson=62">Gujarati Transcripts</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-62">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=59&amp;lesson=63">English Transcripts</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-63">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_79">
+  <div class="unit_heading" id="unit_heading_79" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_79&quot;)">
+     Books </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_79">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=79&amp;lesson=80">Gujarati Book</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-80">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=79&amp;lesson=81">Hindi Book</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-html-81">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=79&amp;lesson=82">Bengali Book</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-html-82">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+                
+            
+          
+          
+        
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=79&amp;lesson=110">English Book</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-html-110">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_83">
+  <div class="unit_heading" id="unit_heading_83" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_83&quot;)">
+     Download Videos </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_83">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=83&amp;lesson=84">MP4 Videos</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-html-84">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+          
+          
+            
+          
+        
+      
+  
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_117">
+  <div class="unit_heading" id="unit_heading_117" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_117&quot;)">
+     Online Programming Test - Sample </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_117">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=118">Sample Online Test Question 1</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-118">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=119">Sample Online Test Question 2</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-119">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=120">Sample Online Test Question 3</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-120">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=121">Sample Online Test Question 4</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-121">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=122">Sample Online Test Question 5</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-122">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=123">Sample Online Test Question 6</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-123">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=124">Sample Online Test Question 7</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-124">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=125">Sample Online Test Question 8</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/not_started.png" alt="Not Started" title="Not Started" class="gcb-progress-icon" id="progress-state-125">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_126">
+  <div class="unit_heading" id="unit_heading_126" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_126&quot;)">
+     Online Programming Test 1, 01 Dec 2020, 10:00-12:00 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_126">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=126&amp;lesson=127">Instructions</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-html-127">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=131">Online Test 1 Question 1</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-131">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=132">Online Test 1 Question 2</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-132">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=134">Online Test 1 Question 3</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-134">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=136">Online Test 1 Question 4</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-136">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=137">Online Test 1 Question 5</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-137">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=138">Online Test 1 Question 6</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-138">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=139">Online Test 1 Question 7</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-139">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=140">Online Test 1 Question 8</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-140">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_128">
+  <div class="unit_heading" id="unit_heading_128" onclick="toggleSubUnitNavBar(&quot;subunit_navbar_128&quot;)">
+     Online Programming Test 2, 01 Dec 2020, 20:00-22:00 </div>
+    
+      <ul class="subunit_navbar_other" id="subunit_navbar_128">
+    
+            
+              
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+  
+      
+        
+          
+            
+                
+                  
+    <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/unit?unit=128&amp;lesson=129">Instructions</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-html-129">
+</div>
+      
+    </div></li>
+    
+  
+                
+            
+          
+          
+        
+          
+          
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=130">Online Test 2 Question 1</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-130">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=133">Online Test 2 Question 2</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-133">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=135">Online Test 2 Question 3</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-135">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=141">Online Test 2 Question 4</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-141">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=142">Online Test 2 Question 5</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-142">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=143">Online Test 2 Question 6</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-143">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=145">Online Test 2 Question 7</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-145">
+</div>
+          
+        </div></li>
+  
+                
+            
+                
+            
+          
+        
+          
+          
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                  
+    
+      <li class="subunit_other">
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+    
+          
+            <a href="https://onlinecourses.nptel.ac.in/noc20_cs26/progassignment?name=146">Online Test 2 Question 8</a>
+          
+          
+            <div class="gcb-progress-icon-holder"><img src="./w4_files/completed.png" alt="Completed" title="Completed" class="gcb-progress-icon" id="progress-state-146">
+</div>
+          
+        </div></li>
+  
+                
+            
+          
+        
+      
+  
+            
+          </ul></div>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+    &nbsp;
+  </div>
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+</div>
+  
+
+  <div id="gcb-main-article" class="gcb-article tab-content" role="main">
+    <div class="gcb-html-hook" id="unit-after-content-begins"></div>
+
+    
+        
+      
+      
+        
+          <div class="gcb-aside gcb-button-box">
+            
+  
+
+
+<script>
+  window.onload = function(){
+    var miliSecondsToDisableSubmit = calculateTimerToDisableSubmit();
+    var days = miliSecondsToDisableSubmit  / ( 24 * 60 * 60 * 1000);
+    if(days >= 0 && days < 14){
+      setTimeout(function() {
+        var submit_button = document.getElementById("submitbutton");
+        if(submit_button) submit_button .disabled = true;
+        var check_answer_button = document.getElementById("checkAnswerButton");
+        if(check_answer_button) check_answer_button.disabled = true;
+        cbShowMsgAutoHide('Due date passed');
+      }, miliSecondsToDisableSubmit );
+    }
+  }
+
+  function calculateTimerToDisableSubmit(){
+    var date_in_mili_sec = '1582741740000.0';
+    var current_mili_seconds = new Date().getTime();
+    var difference_in_miliseconds = date_in_mili_sec - current_mili_seconds ;
+    return difference_in_miliseconds;
+  }
+</script>
+
+
+<div class="gcb-assessment-contents">
+  <h1>
+    Week 4 Quiz
+    
+
+  </h1>
+
+  
+
+    
+
+    <script>
+      assessmentXsrfToken = '1608188478/EyPUllH_rDlOAAHHbceXeg==';
+
+      var assessmentGlobals = {};
+      var enable_negative_marking = JSON.parse("false");
+      assessmentGlobals.isReviewForm = false;
+      assessmentGlobals.grader = 'auto';
+      
+    </script>
+
+    <div class="assessment-top-info">
+    
+      
+        
+        <strong>
+          The due date for submitting this assignment has passed.
+        </strong>
+        <div class="gcb-submission-due-date">
+          Due on 2020-02-26, 23:59 IST.
+        </div>
+      
+      
+    
+    
+    </div>
+
+    
+      <p class="total-score total_score">
+        <strong>
+          
+          Score:
+        </strong>
+        <span class="score">10/10=100%</span>
+      </p>
+    
+
+    
+
+    
+
+    
+      
+      <h3 class="submission-info">
+        
+          <span class="submission-date">
+            
+              Assignment submitted on
+              2020-02-19, 20:59 IST</span>
+        
+      </h3>
+
+      <div class="readonly-assessment">
+        
+          
+<div data-xsrf-token="1608188478/EyPUllH_rDlOAAHHbceXeg==" data-unit-id="97" data-question-batch-id="A97" data-scored="True">
+  <script>
+    var questionData = questionData || {};
+    questionData.xsrfToken = '1608188478/EyPUllH_rDlOAAHHbceXeg==';
+    
+      questionData.savedAnswers = questionData.savedAnswers || {};
+      $.extend(questionData.savedAnswers,
+          JSON.parse("{\"containedTypes\": {}, \"quids\": {}, \"answers\": {}, \"percentScore\": 0, \"version\": \"1.5\", \"rawScore\": 0, \"individualScores\": {\"fnC0nIGktX9L\": [2.5, 2.5, 2.5, 2.5]}, \"fnC0nIGktX9L\": {\"fnC0nIGktX9L.1.5898529166852096\": {\"is_answered\": true, \"response\": \"[(2, 4, 5), (3, 3, 5), (3, 4, 5), (3, 4, 6)]\"}, \"is_answered\": true, \"fnC0nIGktX9L.2.5059965940137984\": {\"is_answered\": true, \"responses\": [false, false, false, true]}, \"fnC0nIGktX9L.0.5445828352147456\": {\"is_answered\": true, \"response\": \"258\"}, \"fnC0nIGktX9L.3.4672961993768960\": {\"is_answered\": true, \"responses\": [false, false, true, false]}}, \"totalWeight\": 0}"));
+    
+  </script>
+  <div class="gcb-assessment-body assessment-readonly show-feedback">
+    <div><link href="./w4_files/questions.css" rel="stylesheet" type="text/css">
+<script>
+    questionData['fnC0nIGktX9L'] = JSON.parse(window.atob("eyJmbkMwbklHa3RYOUwuMC41NDQ1ODI4MzUyMTQ3NDU2IjogeyJxdWVzdGlvbiI6IDU0NDU4MjgzNTIxNDc0NTYsICJ3ZWlnaHQiOiAyLjV9LCAiZm5DMG5JR2t0WDlMLjEuNTg5ODUyOTE2Njg1MjA5NiI6IHsicXVlc3Rpb24iOiA1ODk4NTI5MTY2ODUyMDk2LCAid2VpZ2h0IjogMi41fSwgImZuQzBuSUdrdFg5TC4yLjUwNTk5NjU5NDAxMzc5ODQiOiB7InF1ZXN0aW9uIjogNTA1OTk2NTk0MDEzNzk4NCwgIndlaWdodCI6IDIuNX0sICJmbkMwbklHa3RYOUwuMy40NjcyOTYxOTkzNzY4OTYwIjogeyJxdWVzdGlvbiI6IDQ2NzI5NjE5OTM3Njg5NjAsICJ3ZWlnaHQiOiAyLjV9fQ=="));
+
+
+    var assessmentTagMessages = {};
+
+    
+    assessmentTagMessages.correct = "Correct. ";
+    
+    assessmentTagMessages.incorrect = "Incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrect = "Partially Correct. ";
+
+    
+    assessmentTagMessages.correctAnswer = " Yes, the answer is correct. ";
+    
+    assessmentTagMessages.incorrectAnswer = " No, the answer is incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrectAnswer = " The answer is partially correct. ";
+
+    
+    assessmentTagMessages.correctAnswerHeading = "The correct answer is:";
+    
+    assessmentTagMessages.targetedFeedbackHeading = "Targeted Feedback:";
+    
+    assessmentTagMessages.feedbackHeading = "Feedback:";
+
+    
+    assessmentTagMessages.yourScoreIs = " Your score is: ";
+  </script>
+<script src="./w4_files/grading_lib.js"></script>
+<script src="./w4_files/grading.js"></script>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+
+
+
+
+  <div class="qt-question-group " id="fnC0nIGktX9L">
+   
+      <div class="qt-introduction">
+        All questions carry equal weightage. All Python code is assumed to be executed using Python3. You may submit as many times as you like within the deadline. Your final submission will be graded.
+
+<p><b>Note</b>:</p>
+
+<ul>
+  <li>If the question asks about a value of type <tt>string</tt>, remember to enclose your answer in single or double quotes.
+  </li><li>If the question asks about a value of type <tt>list</tt>, remember to enclose your answer in square brackets and use commas to separate list items.
+</li></ul>
+      </div>
+   
+       
+          <link href="./w4_files/questions.css" rel="stylesheet" type="text/css">
+<script>
+    questionData['fnC0nIGktX9L.0.5445828352147456'] = JSON.parse(window.atob("eyJxdWlkIjogNTQ0NTgyODM1MjE0NzQ1NiwgImdyYWRlcnMiOiBbeyJtYXRjaGVyIjogInJlZ2V4IiwgInNjb3JlIjogIjEuMCIsICJyZXNwb25zZSI6ICJeXFxzKjI1OFxccyokIiwgImZlZWRiYWNrIjogIiJ9XSwgImhpbnQiOiAiIiwgImRlZmF1bHRGZWVkYmFjayI6ICJDb3JyZWN0IGFuc3dlciBpcyAyNTguICBUaGUgZnVuY3Rpb24gaW5kdWN0aXZlbHkgY29tcHV0ZXMgc3VtKGwpK3YiLCAid2VpZ2h0IjogMi41fQ=="));
+
+
+    var assessmentTagMessages = {};
+
+    
+    assessmentTagMessages.correct = "Correct. ";
+    
+    assessmentTagMessages.incorrect = "Incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrect = "Partially Correct. ";
+
+    
+    assessmentTagMessages.correctAnswer = " Yes, the answer is correct. ";
+    
+    assessmentTagMessages.incorrectAnswer = " No, the answer is incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrectAnswer = " The answer is partially correct. ";
+
+    
+    assessmentTagMessages.correctAnswerHeading = "The correct answer is:";
+    
+    assessmentTagMessages.targetedFeedbackHeading = "Targeted Feedback:";
+    
+    assessmentTagMessages.feedbackHeading = "Feedback:";
+
+    
+    assessmentTagMessages.yourScoreIs = " Your score is: ";
+  </script>
+<script src="./w4_files/grading_lib.js"></script>
+<script src="./w4_files/grading.js"></script>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+
+
+
+
+<div class=" gcb-cols gcb-question-counter-increment gcb-question-row ">
+    <div class=" gcb-col-counters gcb-show-question-counter ">
+    </div>
+    <div class="qt-sa-question qt-embedded
+        " id="fnC0nIGktX9L.0.5445828352147456">
+        <div class="qt-question  " id="sa_question_fnC0nIGktX9L.0.5445828352147456">
+            <p>Consider the following Python function.</p>
+
+<pre style="margin:25px">def mystery(l,v):
+  if len(l) == 0:
+    return (v)
+  else:
+    return (mystery(l[:-1],l[-1]+v))
+</pre>
+
+<p>What does <tt>mystery([22,14,19,65,82,55],1)</tt> return?</p>
+
+        </div>
+        <div class="qt-response">
+            
+                <input type="text" disabled="disabled">
+                
+        </div>
+        
+
+            <!--  -->
+
+            <div class="qt-feedback" role="alert"><div><h3 class="feedback-header"><span class="correct"> Yes, the answer is correct. </span><br><span class="correct">Score: 2.5</span></h3><div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class="faculty-answer">(Type: Regex Match) \s*258\s*</div></div></div></div>
+    </div>
+    
+        <div class="qt-points">
+                <em>
+                    
+                    
+                    2.5 points
+                    
+                </em>
+        </div>
+    
+</div>
+
+       
+          <link href="./w4_files/questions.css" rel="stylesheet" type="text/css">
+<script>
+    questionData['fnC0nIGktX9L.1.5898529166852096'] = JSON.parse(window.atob("eyJxdWlkIjogNTg5ODUyOTE2Njg1MjA5NiwgImdyYWRlcnMiOiBbeyJtYXRjaGVyIjogInJlZ2V4IiwgInNjb3JlIjogIjEuMCIsICJyZXNwb25zZSI6ICJeXFxzKlxcW1xccypcXChcXHMqMlxccyosXFxzKjRcXHMqLFxccyo1XFxzKlxcKVxccyosXFxzKlxcKFxccyozXFxzKixcXHMqM1xccyosXFxzKjVcXHMqXFwpXFxzKixcXHMqXFwoXFxzKjNcXHMqLFxccyo0XFxzKixcXHMqNVxccypcXClcXHMqLFxccypcXChcXHMqM1xccyosXFxzKjRcXHMqLFxccyo2XFxzKlxcKVxccypcXF1cXHMqJCIsICJmZWVkYmFjayI6ICIifV0sICJoaW50IjogIiIsICJkZWZhdWx0RmVlZGJhY2siOiAiXHUwMDNDcHJlXHUwMDNFXG50cmlwbGVzID0gW11cbmZvciB4IGluIHJhbmdlKDIsNCk6ICAgICAgIyB4ID0gMiwzXG4gIGZvciB5IGluIHJhbmdlKDIsNSk6ICAgICMgeSA9IDIsMyw0XG4gICAgZm9yIHogaW4gcmFuZ2UoNSw3KTogICMgeiA9IDUsNlxuICAgICAgaWYgMip4KnkgXHUwMDNFIDMqejpcbiAgICAgICAgIHRyaXBsZXMuYXBwZW5kKCh4LHkseikpXG4gICAgICAgICBcbk91dHB1dDogWygyLCA0LCA1KSwgKDMsIDMsIDUpLCAoMywgNCwgNSksICgzLCA0LCA2KV1cblx1MDAzQ3ByZVx1MDAzRVxuIiwgIndlaWdodCI6IDIuNX0="));
+
+
+    var assessmentTagMessages = {};
+
+    
+    assessmentTagMessages.correct = "Correct. ";
+    
+    assessmentTagMessages.incorrect = "Incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrect = "Partially Correct. ";
+
+    
+    assessmentTagMessages.correctAnswer = " Yes, the answer is correct. ";
+    
+    assessmentTagMessages.incorrectAnswer = " No, the answer is incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrectAnswer = " The answer is partially correct. ";
+
+    
+    assessmentTagMessages.correctAnswerHeading = "The correct answer is:";
+    
+    assessmentTagMessages.targetedFeedbackHeading = "Targeted Feedback:";
+    
+    assessmentTagMessages.feedbackHeading = "Feedback:";
+
+    
+    assessmentTagMessages.yourScoreIs = " Your score is: ";
+  </script>
+<script src="./w4_files/grading_lib.js"></script>
+<script src="./w4_files/grading.js"></script>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+
+
+
+
+<div class=" gcb-cols gcb-question-counter-increment gcb-question-row ">
+    <div class=" gcb-col-counters gcb-show-question-counter ">
+    </div>
+    <div class="qt-sa-question qt-embedded
+        " id="fnC0nIGktX9L.1.5898529166852096">
+        <div class="qt-question  " id="sa_question_fnC0nIGktX9L.1.5898529166852096">
+            What is the value of <tt>triples after the following assignment?
+
+
+<pre style="margin:25bp">triples = [ (x,y,z) for x in range(2,4) for y in range(2,5) for z in range(5,7) if 2*x*y &gt; 3*z ]
+</pre></tt>
+        </div>
+        <div class="qt-response">
+            
+                <input type="text" disabled="disabled">
+                
+        </div>
+        
+
+            <!--  -->
+
+            <div class="qt-feedback" role="alert"><div><h3 class="feedback-header"><span class="correct"> Yes, the answer is correct. </span><br><span class="correct">Score: 2.5</span></h3><div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class="faculty-answer">(Type: Regex Match) \s*\[\s*\(\s*2\s*,\s*4\s*,\s*5\s*\)\s*,\s*\(\s*3\s*,\s*3\s*,\s*5\s*\)\s*,\s*\(\s*3\s*,\s*4\s*,\s*5\s*\)\s*,\s*\(\s*3\s*,\s*4\s*,\s*6\s*\)\s*\]\s*</div></div></div></div>
+    </div>
+    
+        <div class="qt-points">
+                <em>
+                    
+                    
+                    2.5 points
+                    
+                </em>
+        </div>
+    
+</div>
+
+       
+          <link href="./w4_files/questions.css" rel="stylesheet" type="text/css">
+<script>
+    questionData['fnC0nIGktX9L.2.5059965940137984'] = JSON.parse(window.atob("eyJxdWlkIjogNTA1OTk2NTk0MDEzNzk4NCwgImNob2ljZXMiOiBbeyJ0ZXh0IjogIlx1MDAzQ3R0XHUwMDNFcnVuc1tcIk9ESVwiXVtcIlJhaHVsXCJdLmFwcGVuZChbNzRdKVx1MDAzQy90dFx1MDAzRSIsICJzY29yZSI6IDAuMCwgImZlZWRiYWNrIjogIiJ9LCB7InRleHQiOiAiXHUwMDNDdHRcdTAwM0VydW5zW1wiT0RJXCJdW1wiUmFodWxcIl0uZXh0ZW5kKFs3NF0pXHUwMDNDL3R0XHUwMDNFIiwgInNjb3JlIjogMC4wLCAiZmVlZGJhY2siOiAiIn0sIHsidGV4dCI6ICJcdTAwM0N0dFx1MDAzRXJ1bnNbXCJPRElcIl1bXCJSYWh1bFwiXVswXT03NFx1MDAzQy90dFx1MDAzRSIsICJzY29yZSI6IDAuMCwgImZlZWRiYWNrIjogIiJ9LCB7InRleHQiOiAiXHUwMDNDdHRcdTAwM0VydW5zW1wiT0RJXCJdW1wiUmFodWxcIl09Wzc0XVx1MDAzQy90dFx1MDAzRSIsICJzY29yZSI6IDEuMCwgImZlZWRiYWNrIjogIiJ9XSwgImRlZmF1bHRGZWVkYmFjayI6ICJcdTAwM0N0dFx1MDAzRXJ1bnNbXCJPRElcIl1bXCJSYWh1bFwiXVx1MDAzQy90dFx1MDAzRSBjcmVhdGVzIGEgbmV3IGtleSwgc28gb25lIGNhbiBvbmx5IGFzc2lnbiBpdCBhIGZyZXNoIHZhbHVlLCBub3QgYWNjZXNzIHBhcnRzIG9mIHRoZSB2YWx1ZSBvciBhcHBlbmQgdG8gb3IgZXh0ZW5kIHRoZSB2YWx1ZS4iLCAicGVybXV0ZUNob2ljZXMiOiBmYWxzZSwgInNob3dBbnN3ZXJXaGVuSW5jb3JyZWN0IjogZmFsc2UsICJhbGxPck5vdGhpbmdHcmFkaW5nIjogZmFsc2UsICJ3ZWlnaHQiOiAyLjV9"));
+
+
+    var assessmentTagMessages = {};
+
+    
+    assessmentTagMessages.correct = "Correct. ";
+    
+    assessmentTagMessages.incorrect = "Incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrect = "Partially Correct. ";
+
+    
+    assessmentTagMessages.correctAnswer = " Yes, the answer is correct. ";
+    
+    assessmentTagMessages.incorrectAnswer = " No, the answer is incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrectAnswer = " The answer is partially correct. ";
+
+    
+    assessmentTagMessages.correctAnswerHeading = "The correct answer is:";
+    
+    assessmentTagMessages.targetedFeedbackHeading = "Targeted Feedback:";
+    
+    assessmentTagMessages.feedbackHeading = "Feedback:";
+
+    
+    assessmentTagMessages.yourScoreIs = " Your score is: ";
+  </script>
+<script src="./w4_files/grading_lib.js"></script>
+<script src="./w4_files/grading.js"></script>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+
+
+
+
+<script>
+//Function to allow user to deselect the assignment question
+// @todo Mrunal : When we submit the question once if we revisit that question again we have to double click on option to
+// deselect it ,if it is already selected.This is a minor issue and will be resolved
+function clearSelection(radio) {
+    if (radio.getAttribute("data-checked")) {
+        radio.checked = false;
+        radio.removeAttribute("data-checked");
+    }
+    else
+    {
+        radio.setAttribute("data-checked", "true");
+    }
+}
+</script>
+<style>
+  label {
+    margin-bottom: 0px;
+    font-weight: normal;
+  }
+</style>
+  <div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+      <div class="gcb-col-counters gcb-show-question-counter"></div>
+      <div class="qt-mc-question qt-embedded" id="fnC0nIGktX9L.2.5059965940137984">
+        <div class="qt-points">
+          <em>
+            
+              
+              2.5 points
+            
+          </em>
+        </div>
+
+        <div class="qt-question">Consider the following dictionary.
+
+<pre>runs = {"Test":{"Rahul":[90,14,35],"Kohli":[3,103,73,42],"Pujara":[53,15,133,8]},"ODI":{"Sharma":[37,99],"Kohli":[63,47]}}
+</pre>
+
+Which of the following statements does <em><b>not</b></em> generate an error?</div>
+        <div class="qt-choices">
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="0" id="fnC0nIGktX9L.2.5059965940137984.0" name="fnC0nIGktX9L.2.5059965940137984" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.2.5059965940137984.0">
+                <tt>runs["ODI"]["Rahul"].append([74])</tt>
+              </label>
+            </div>
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="1" id="fnC0nIGktX9L.2.5059965940137984.1" name="fnC0nIGktX9L.2.5059965940137984" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.2.5059965940137984.1">
+                <tt>runs["ODI"]["Rahul"].extend([74])</tt>
+              </label>
+            </div>
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="2" id="fnC0nIGktX9L.2.5059965940137984.2" name="fnC0nIGktX9L.2.5059965940137984" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.2.5059965940137984.2">
+                <tt>runs["ODI"]["Rahul"][0]=74</tt>
+              </label>
+            </div>
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="3" id="fnC0nIGktX9L.2.5059965940137984.3" name="fnC0nIGktX9L.2.5059965940137984" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.2.5059965940137984.3">
+                <tt>runs["ODI"]["Rahul"]=[74]</tt>
+              </label>
+            </div>
+          
+        </div>
+
+        <!--  -->
+
+        <div class="qt-feedback" role="alert"><div><h3 class="feedback-header"><span class="correct"> Yes, the answer is correct. </span><br><span class="correct">Score: 2.5</span></h3><h3 class="feedback-header">Feedback:</h3><div><tt>runs["ODI"]["Rahul"]</tt> creates a new key, so one can only assign it a fresh value, not access parts of the value or append to or extend the value.</div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class="faculty-answer"><div><div><label for="fnC0nIGktX9L.2.5059965940137984.3">
+                <tt>runs["ODI"]["Rahul"]=[74]</tt>
+              </label></div></div></div></div></div>
+      </div>
+  </div>
+
+       
+          <link href="./w4_files/questions.css" rel="stylesheet" type="text/css">
+<script>
+    questionData['fnC0nIGktX9L.3.4672961993768960'] = JSON.parse(window.atob("eyJxdWlkIjogNDY3Mjk2MTk5Mzc2ODk2MCwgImNob2ljZXMiOiBbeyJ0ZXh0IjogIlx1MDAzQ3R0XHUwMDNFYWN0b3JbXCJTdGFyIFdhcnNcIl0gPSBbXCJSZXlcIixcIlJpZGxleVwiXVx1MDAzQy90dFx1MDAzRSIsICJzY29yZSI6IDAuMCwgImZlZWRiYWNrIjogIiJ9LCB7InRleHQiOiAiXHUwMDNDdHRcdTAwM0VhY3RvcltcIlN0YXIgV2FycywgUmV5XCJdID0gXCJSaWRsZXlcIlx1MDAzQy90dFx1MDAzRSIsICJzY29yZSI6IDAuMCwgImZlZWRiYWNrIjogIiJ9LCB7InRleHQiOiAiXHUwMDNDdHRcdTAwM0VhY3RvcltbXCJTdGFyIFdhcnNcIiwgXCJSZXlcIl1dID0gXCJSaWRsZXlcIlx1MDAzQy90dFx1MDAzRSIsICJzY29yZSI6IDEuMCwgImZlZWRiYWNrIjogIiJ9LCB7InRleHQiOiAiXHUwMDNDdHRcdTAwM0VhY3RvclsoXCJTdGFyIFdhcnNcIiwgXCJSZXlcIildID0gXCJSaWRsZXlcIlx1MDAzQy90dFx1MDAzRSIsICJzY29yZSI6IDAuMCwgImZlZWRiYWNrIjogIiJ9XSwgImRlZmF1bHRGZWVkYmFjayI6ICJEaWN0aW9uYXJ5IGtleXMgbXVzIGJlIGltbXV0YWJsZSB2YWx1ZXMuIiwgInBlcm11dGVDaG9pY2VzIjogZmFsc2UsICJzaG93QW5zd2VyV2hlbkluY29ycmVjdCI6IGZhbHNlLCAiYWxsT3JOb3RoaW5nR3JhZGluZyI6IGZhbHNlLCAid2VpZ2h0IjogMi41fQ=="));
+
+
+    var assessmentTagMessages = {};
+
+    
+    assessmentTagMessages.correct = "Correct. ";
+    
+    assessmentTagMessages.incorrect = "Incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrect = "Partially Correct. ";
+
+    
+    assessmentTagMessages.correctAnswer = " Yes, the answer is correct. ";
+    
+    assessmentTagMessages.incorrectAnswer = " No, the answer is incorrect. ";
+    
+    assessmentTagMessages.partiallyCorrectAnswer = " The answer is partially correct. ";
+
+    
+    assessmentTagMessages.correctAnswerHeading = "The correct answer is:";
+    
+    assessmentTagMessages.targetedFeedbackHeading = "Targeted Feedback:";
+    
+    assessmentTagMessages.feedbackHeading = "Feedback:";
+
+    
+    assessmentTagMessages.yourScoreIs = " Your score is: ";
+  </script>
+<script src="./w4_files/grading_lib.js"></script>
+<script src="./w4_files/grading.js"></script>
+<noscript>
+    <div class="qt-warning">
+        
+         JavaScript should be enabled to grade this question. 
+    </div>
+</noscript>
+
+
+
+
+<script>
+//Function to allow user to deselect the assignment question
+// @todo Mrunal : When we submit the question once if we revisit that question again we have to double click on option to
+// deselect it ,if it is already selected.This is a minor issue and will be resolved
+function clearSelection(radio) {
+    if (radio.getAttribute("data-checked")) {
+        radio.checked = false;
+        radio.removeAttribute("data-checked");
+    }
+    else
+    {
+        radio.setAttribute("data-checked", "true");
+    }
+}
+</script>
+<style>
+  label {
+    margin-bottom: 0px;
+    font-weight: normal;
+  }
+</style>
+  <div class="gcb-cols gcb-question-counter-increment gcb-question-row">
+      <div class="gcb-col-counters gcb-show-question-counter"></div>
+      <div class="qt-mc-question qt-embedded" id="fnC0nIGktX9L.3.4672961993768960">
+        <div class="qt-points">
+          <em>
+            
+              
+              2.5 points
+            
+          </em>
+        </div>
+
+        <div class="qt-question">Assume that <tt>actor</tt>
+has been initialized as an empty dictionary:
+
+<pre style="margin:15px">actor = {}
+</pre>
+
+Which of the following generates an error?
+</div>
+        <div class="qt-choices">
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="0" id="fnC0nIGktX9L.3.4672961993768960.0" name="fnC0nIGktX9L.3.4672961993768960" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.3.4672961993768960.0">
+                <tt>actor["Star Wars"] = ["Rey","Ridley"]</tt>
+              </label>
+            </div>
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="1" id="fnC0nIGktX9L.3.4672961993768960.1" name="fnC0nIGktX9L.3.4672961993768960" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.3.4672961993768960.1">
+                <tt>actor["Star Wars, Rey"] = "Ridley"</tt>
+              </label>
+            </div>
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="2" id="fnC0nIGktX9L.3.4672961993768960.2" name="fnC0nIGktX9L.3.4672961993768960" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.3.4672961993768960.2">
+                <tt>actor[["Star Wars", "Rey"]] = "Ridley"</tt>
+              </label>
+            </div>
+          
+            <div class="gcb-mcq-choice">
+              <input data-index="3" id="fnC0nIGktX9L.3.4672961993768960.3" name="fnC0nIGktX9L.3.4672961993768960" onclick="clearSelection(this)" type="radio" disabled="">
+              <label for="fnC0nIGktX9L.3.4672961993768960.3">
+                <tt>actor[("Star Wars", "Rey")] = "Ridley"</tt>
+              </label>
+            </div>
+          
+        </div>
+
+        <!--  -->
+
+        <div class="qt-feedback" role="alert"><div><h3 class="feedback-header"><span class="correct"> Yes, the answer is correct. </span><br><span class="correct">Score: 2.5</span></h3><h3 class="feedback-header">Feedback:</h3><div>Dictionary keys mus be immutable values.</div><h3 class="feedback-header faculty-answer">Accepted Answers:</h3><div class="faculty-answer"><div><div><label for="fnC0nIGktX9L.3.4672961993768960.2">
+                <tt>actor[["Star Wars", "Rey"]] = "Ridley"</tt>
+              </label></div></div></div></div></div>
+      </div>
+  </div>
+
+       
+    <!--&lt;div class=&quot;qt-check-answer&quot;&gt;-->
+      <!--&lt;button class=&quot;gcb-button qt-check-answer-button&quot;&gt;-->
+        <!---->
+        <!-- Check Answer -->
+      <!--&lt;/button&gt;-->
+    <!--&lt;/div&gt;-->
+   <div class="qt-feedback qt-hidden" role="alert"></div>
+  </div>
+</div>
+  </div>
+  <div class="qt-assessment-button-bar">
+  
+    <div class="gcb-submit-only-once">
+    
+      
+    
+    </div>
+
+    
+        <div class="qt-grade-scored-lesson-calc-score" style="display:none">
+
+        </div>
+    
+    
+  
+  </div>
+</div>
+
+        
+      </div>
+    
+
+    
+
+    <div id="assessmentContents"></div>
+
+    
+  
+</div>
+          </div><!-- /gcb-aside -->
+        
+       
+      
+      <!-- Commenting out the button code for whitelisting assignments. Might need in future
+      <!-- <div id="gcb-nav-button-box" class="gcb-button-box">
+        
+        <div class="gcb-prev-button">
+          
+        </div>
+        <div class="gcb-next-button">
+          
+            
+            <a href="course"> End </a>
+          
+        </div>
+        
+      </div> -->
+    
+    
+    <div class="gcb-html-hook" id="unit-before-content-ends"></div>
+  </div>
+</div>
+
+
+        <div class="gcb-html-hook" id="base-after-main-content-ends"><!-- base.after_main_content_ends --></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <!-- footer section -->
+  <!--<div class="gcb-footer" id="gcb-footer">
+        <div class="gcb-aux">
+        <style>
+  .gcb-terms-block2 {
+          margin: auto;
+    max-width: 500px;
+          text-align: center;
+  }
+        </style>
+        <div id="gcb-terms"  class="gcb-terms-block2">
+          <p>&copy; 2014 NPTEL -
+            <a onclick='showPopupDiv("termsDiv"); return false;'>
+              
+              Privacy & Terms
+            </a> -
+            <a onclick='showPopupDiv("honorDiv"); return false;'>
+              
+              Honor Code
+            </a> -
+            <a onclick='showPopupDiv("faqDiv"); return false;'>
+              
+              FAQs
+            </a>
+            
+              <script type="text/javascript">
+              (function() {
+               var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+               po.src = 'https://apis.google.com/js/plusone.js?onload=onLoadCallback';
+               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+               })();
+              </script>
+               - <span class="plusone-button" id="plusone-3" style="height: 20px; width: 70px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: top; background-position: initial initial; background-repeat: initial initial; ">
+                <g:plusone size="medium"></g:plusone>
+              </span>
+            
+          </p>
+        </div>
+        </div>
+      <div id="gcb-footer-global" role="contentinfo">
+        <div class="gcb-aux">
+          <div class="footer-logo-block">
+            <section>
+              <h3>A project of</h3>
+                  <a href="http://nptel.iitm.ac.in" target="_blank">
+                  <img src="https://storage.googleapis.com/swayam2-node/modules/nptel/assets/img/footer-logo-nptel.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>In association with</h3>
+                  <a href="http://www.nasscom.in" target="_blank">
+                  <img src="https://storage.googleapis.com/swayam2-node/modules/nptel/assets/img/footer-logo-nasscom.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>Funded by</h3>
+                  <a href="http://mhrd.gov.in" target="_blank">
+                  <img src="https://storage.googleapis.com/swayam2-node/modules/nptel/assets/img/footer-mhrd.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>Powered by</h3>
+                  <a href="http://www.google.com" target="_blank">
+                  <img src="https://storage.googleapis.com/swayam2-node/modules/nptel/assets/img/footer-logo-google.png"/>
+                  </a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46447969-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+    <!---->
+  
+<script src="./w4_files/prettify.js" type="text/javascript" id="https://storage.googleapis.com/swayam2-node/assets/lib/google-code-prettify/prettify.js"></script><script src="./w4_files/activity-generic-1.3.js" type="text/javascript" id="https://storage.googleapis.com/swayam2-node/modules/nptel/assets/js/activity-generic-1.3.js"></script><script src="./w4_files/main.js" type="text/javascript" id="https://storage.googleapis.com/swayam2-node/modules/nptel/assets/js/main.js"></script></body></html>
