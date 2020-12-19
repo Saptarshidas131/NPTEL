@@ -13,7 +13,7 @@ def factorial(n):
 n = int(input("Enter the number to find the factorial: "))
 
 if (n<0):
-    print ("Factorial if only for positive integers.")
+    print ("Factorial is only for positive integers.")
 else:
     f = factorial(n)
     print ("Factorial of ", n ,"is",f)
